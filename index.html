@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <h1>Registration Form</h1>
+    <body>
+        <div>
+            <label for="first">First Name: * </label>
+            <input type="text" />
+        </div>
+        <div>
+            <label for="last">Last Name: * </label>
+            <input type="text" />
+        </div>
+        <div>
+            <label for="email">Email Address: * </label>
+            <input type="email" />
+        </div>
+        <div>
+            <label for="pass">Password: * </label>
+            <input type="password" />
+        </div>
+        <div>
+            <label for="passConf">Confirm Password: * </label>
+            <input type="password" />
+        </div>
+        <div>
+            <label for="birthday">Birthday: </label>
+            <input type="date" />
+        </div>
+        <div>
+            <label for="genderID">Gender Identity: </label>
+            <div>
+                <input type="radio" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="non-binary" />
+                <label for="non-binary">Non-binary</label>
+                <input type="radio" name="gender" value="none" />
+                <label for="none">I prefer not to answer</label>
+            </div>
+        </div>
+        <div>
+            <label for="description"> A short discription about myself:</label>
+            <br />
+            <textarea
+                name="description"
+                id="description"
+                cols="40"
+                rows="3"
+            ></textarea>
+        </div>
+        <div>
+            <label for="langdrop">Favorite Language:</label>
+            <select name="langdrop" id="langdrop">
+                <option>JavaScript</option>
+                <option>C++</option>
+                <option>C</option>
+                <option>MIPS</option>
+                <option>MachineCode</option>
+                <option>Pen&Paper</option>
+                <option>MorseCode</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="updates" id="updates">
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            * Indicates a required field
+        </div>
+    </body>
+</html>
